@@ -1,25 +1,17 @@
-# Changelog
-
-Todos los cambios importantes de FRISK serán documentados aquí.
-
----
-
-# v0.1.0 - Foundation
-
-Fecha: 13 de julio de 2026
+# v0.2.0 - AI Engine
 
 ## Añadido
 
-- Arquitectura modular.
-- Configuración centralizada.
-- Sistema de Logger.
-- Service Container.
-- Event Bus.
-- Clase Application.
-- Clase Assistant.
-- Primer conjunto de pruebas con pytest.
-- Base para futuras versiones.
+- Sistema de proveedores IA
+- Brain
+- Conversation Manager
+- Prompt Manager
+- Intelligent Router
+- AI Engine
+- Streaming
+- Tests automatizados
+- GitHub Actions
 
 ## Estado
 
-✅ Sprint 1 completado.
+✅ Sprint 2 completado.

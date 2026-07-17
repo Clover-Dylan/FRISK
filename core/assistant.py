@@ -1,15 +1,7 @@
-from __future__ import annotations
-
 from core.application import Application
 
 
 class Assistant:
-    """
-    Punto de entrada para interactuar con FRISK.
-
-    Coordina los distintos módulos de la aplicación,
-    pero no implementa su lógica interna.
-    """
 
     def __init__(self, app: Application):
 
@@ -17,7 +9,7 @@ class Assistant:
 
         self.logger = app.get("logger")
 
-        self.events = app.get("events")
+        self.router = app.get("router")
 
     def start(self):
 
@@ -31,19 +23,6 @@ class Assistant:
 
         self.app.stop()
 
-    def process_message(self, message: str) -> str:
-        """
-        Procesa un mensaje del usuario.
+    def process_message(self, message):
 
-        En los próximos sprints este método utilizará:
-        - Router
-        - Plugins
-        - IA
-        - Memoria
-        """
-
-        self.logger.info(f"Usuario: {message}")
-
-        self.events.emit("user_message", message)
-
-        return f"Has dicho: {message}"
+        return self.router.route(message)

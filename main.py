@@ -16,40 +16,21 @@ def main():
 
     while True:
 
-        try:
+        text = input("\nTú > ")
 
-            message = input("\nTú > ").strip()
-
-            if not message:
-                continue
-
-            if message.lower() in (
-                "salir",
-                "exit",
-                "quit"
-            ):
-                break
-
-            response = assistant.process_message(message)
-
-            print(f"\nFRISK > {response}")
-
-        except KeyboardInterrupt:
-
-            print("\n")
+        if text.lower() == "salir":
 
             break
 
-        except Exception as error:
+        answer = assistant.process_message(text)
 
-            logger = app.get("logger")
+        print()
 
-            logger.error(str(error))
-
-            print("\nHa ocurrido un error.")
+        print("FRISK >", answer)
 
     assistant.stop()
 
 
 if __name__ == "__main__":
+
     main()

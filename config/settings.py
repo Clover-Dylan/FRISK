@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 
 from config.constants import *
 
+MAX_HISTORY = 20
+
 # ===========================
 # LOAD ENV
 # ===========================

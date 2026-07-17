@@ -1,43 +1,57 @@
 # FRISK
 
-> Personal AI Assistant Framework
-
----
+> Modular Personal AI Assistant Framework
 
 ## Estado
 
-🟢 En desarrollo.
+🟢 En desarrollo
 
 Versión actual:
 
-v0.1.0
+**v0.2.0**
 
 ---
 
 ## Características
 
 - Arquitectura modular
-- Logger profesional
+- AI Engine
+- Sistema de proveedores
+- Router Inteligente
+- Prompt Manager
+- Conversation Manager
+- Streaming
+- Logger
 - Event Bus
 - Service Container
-- Configuración centralizada
-- Tests automáticos
+- Tests automatizados
 
 ---
 
-## Próximamente
+## Roadmap
 
-- IA (Groq)
+### Sprint 1
+- Arquitectura base
+
+### Sprint 2
+- AI Engine
+
+### Sprint 3
 - Plugins
-- Memoria
 - Automatización
+- Memoria
+
+### Sprint 4
 - Voz
+
+### Sprint 5
 - GUI
+
+### Sprint 6
+- Visión
 
 ---
 
 ## Autor
 
 Dylan
-
-Desarrollado con Python.
